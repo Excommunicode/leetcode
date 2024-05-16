@@ -10,11 +10,10 @@ class Solution {
                     x = i;
                     break;
                 }
-                if (nums[size -1] < target) {
-                    x = size;
-                    break;
-                }
             }
+        }
+        if (nums[size -1] < target) {
+            x = size;
         }
         return x;
         
