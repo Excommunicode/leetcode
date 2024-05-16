@@ -1,7 +1,6 @@
 class Solution {
     public int searchInsert(int[] nums, int target) {
-      int size = nums.length;
-        for (int i = 0; i < size; i++) {
+      for (int i = 0; i < nums.length; i++) {
             if (nums[i] == target) {
                 return i;
             } else {
@@ -10,7 +9,6 @@ class Solution {
                 }
             }
         }
-        return nums[size - 1] < target ? size : -1;
-        
+        return nums[nums.length - 1] < target ? nums.length : -1;
     }
 }
