@@ -6,9 +6,6 @@ class Solution {
         for (int num : nums) {
             uniqueNumbers.add(num);
         }
-        if (uniqueNumbers.size() != nums.length) {
-            return true;
-        }
-        return false;
+        return uniqueNumbers.size() != nums.length;
     }
 }
