@@ -1,11 +1,12 @@
-import java.util.HashSet;
-import java.util.Set;
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        Set<Integer> uniqueNumbers = new HashSet<>();
+        Map<Integer, Integer> uniqueNumbers = new HashMap<>();
         for (int num : nums) {
-            uniqueNumbers.add(num);
+            if (uniqueNumbers.containsKey(num)) {
+                return true;
+            }
+            uniqueNumbers.put(num,num);
         }
-        return uniqueNumbers.size() != nums.length;
+        return false;
     }
 }
