@@ -6,10 +6,6 @@ class Solution {
         StringBuilder stringBuilder = new StringBuilder(String.format("%d", x));
         stringBuilder.reverse();
         long a = Long.parseLong(stringBuilder.toString());
-        if (x == a) {
-            return true;
-        } else {
-            return false;
-        }
+        return x == a;
     }
 }
