@@ -8,10 +8,6 @@ class Solution {
             y += Integer.parseInt(strings[x]);
             x++;
         }
-
-        if (y > 9) {
-            y = addDigits(y);
-        }
-        return y;
+        return y > 9 ? addDigits(y) : y;
     }
 }
