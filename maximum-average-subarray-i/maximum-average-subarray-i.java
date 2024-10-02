@@ -18,7 +18,6 @@ class Solution {
         while (rightIndex < nums.length) {
 
 
-            result = Math.max(result, (double) curr / k);
             curr -= nums[leftIndex];
 
 
